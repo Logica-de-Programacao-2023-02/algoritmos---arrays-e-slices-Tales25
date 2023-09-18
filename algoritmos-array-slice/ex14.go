@@ -30,6 +30,9 @@ func main() {
 	//trocando de fato os valores
 	sliceInt[x] = troca2
 	sliceInt[y] = troca1
+	
+	//jeito do professor (da para trocar mais de uma variavel na mesma linha par não dar erro)
+	//sliceInt[x], sliceInt[y] = sliceInt[y], sliceInt[x]
 
 	//print do novo slice
 	fmt.Print(sliceInt)
