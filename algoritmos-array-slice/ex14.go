@@ -38,3 +38,29 @@ func main() {
 	fmt.Print(sliceInt)
 
 }
+
+###################################################################################################################
+//apenas do jeito do professor
+
+package main
+
+import "fmt"
+
+func main() {
+
+	sliceInt := []int{1, 2, 3, 4, 5, 6, 7, 8}
+
+	var x, y int
+	
+	fmt.Println(sliceInt)
+
+	fmt.Println("Escolha as posições (de 0 a 7) a serem trocadas:")
+	fmt.Scan(&x, &y)
+	
+	fmt.Printf("O valor do Primeiro Index é %d e do Segundo Index é %d\n", sliceInt[x], sliceInt[y])
+	
+	sliceInt[x], sliceInt[y] = sliceInt[y], sliceInt[x]
+
+	fmt.Print(sliceInt)
+	
+}
